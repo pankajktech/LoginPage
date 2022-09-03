@@ -33,7 +33,7 @@ body{
 }
 input{
     font-family: 'Eczar', serif;
-    color: black;
+    color: #b713a1;
     background-color: rgb(255, 255, 255);
     width: 40vh;
     border-radius: 15px;
@@ -56,23 +56,25 @@ button{
     font-family: 'Eczar', serif;
     cursor: pointer;
     margin: 35px auto;
-    height: 5vh;
-    width: 20vh;
+    /* height: 5vh; */
+    width: 15vh;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     border-color: #b713a1;
+    color: #b713a1;
 }
 button:hover{
     background-color: #b713a1;
     transition: all 1s;
+    color: #ffffff;
 }
 footer{
     font-family: 'Eczar', serif;
    text-align: center;
-   color: #00ffff;
+   color: #ffffff;
 }
 
 footer a{
-    color: #00ffff;
+    color: #d9ff00;
     text-decoration: none;
 }
