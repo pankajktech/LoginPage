@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&display=swap');
-
+body{
+    background-color: rgb(139, 85, 85);
+}
 .container{
     /* background: url(frame.jpg) no-repeat center center/cover; */
     height: 90vh;
@@ -7,34 +9,45 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(0, 255, 247);
+    color: rgb(0, 0, 0);
 }
-.container::before{
+/* .container::before{
     content: '';
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: rgb(0, 255, 242);
-    background: url(frame.jpg) no-repeat center center/cover;
+    background-color: rgb(139, 85, 85);
+    background: url(frame.jpg) no-repeat center center/cover; 
     z-index: -1;
     filter: blur(5px);
-}
+} */
 .username{
     text-align: center;
     width: 100%;
    
+}
+.form{
+    width: 50vh;
+    background-color: aliceblue;
+    /* border: 5px solid black; */
 }
 input{
     font-family: 'Eczar', serif;
     color: black;
     background-color: rgb(255, 255, 255);
     width: 40vh;
-    height: 5;
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
+    border-color: #b713a1;
+}
+.title{
+    font-family: 'Eczar', serif;
+    /* background-color: #b713a1; */
+    color: #ffffff;
 }
 p{
     font-family: 'Eczar', serif;
+    color: #b713a1;
 }
 .container .btn{
    display: flex;  
@@ -47,30 +60,19 @@ button{
     width: 20vh;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
+    border-color: #b713a1;
 }
 button:hover{
-    background-color: #00ffff;
+    background-color: #b713a1;
     transition: all 1s;
 }
 footer{
     font-family: 'Eczar', serif;
    text-align: center;
-   position: fixed;
-   left: 0%;
-   bottom: 0;
-   width: 100%;
-   background-image: linear-gradient(to right, #000000, #000dff );
-   color: #00ffff; 
-   text-shadow: 3px 3px 3px #ff0000;
-   /* box-shadow: 5px 5px 30px #00ffff inset; */
+   color: #00ffff;
 }
 
 footer a{
-    color: #f2ff00;
+    color: #00ffff;
     text-decoration: none;
-    /* color: blue;
-    /* background-color: aliceblue; */
-    /* border: 2px solid blue;
-    border-radius: 5px;
-    padding: 3px; */ 
 }
