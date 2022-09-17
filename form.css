@@ -3,24 +3,24 @@
 body {
     padding: 0;
     margin: 0;
-    /* background-color: rgb(139, 85, 85); */
+    scroll-behavior: smooth;
 }
 
 body::before {
     content: '';
-    background: url(login.jpg) no-repeat center center/cover;
+    background: url(Blurred\ BG.jpeg) no-repeat center center/cover;
     z-index: -1;
     position: absolute;
     width: 100%;
     height: 100vh;
-    filter: blur(10px);
+    /* filter: blur(10px); */
 }
 
 .container {
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: 45vh;
     flex-direction: column;
     color: rgb(0, 0, 0);
 }
@@ -28,34 +28,32 @@ body::before {
 .username {
     text-align: center;
     width: 100%;
-
 }
 
 .form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80vh;
-    height: 60vh;
-    background-color: aliceblue;
+    width: 60vh;
+    height: 55vh;
+    background-color: rgb(177, 183, 178);
     align-items: center;
-    box-shadow: 10px 10px 10px black, -10px -10px 10px black;
 }
 
 input {
     font-family: 'Eczar', serif;
-    color: #b713a1;
+    color: #000000;
     background-color: rgb(255, 255, 255);
     width: 40vh;
-    text-align: center;
+    /* text-align: center; */
     border-color: #101249;
 }
 
 .title {
-    border: 1px solid #b713a1;
+    border: 1px solid #4433ff;
     padding: 5px;
     font-family: 'Eczar', serif;
-    color: #b713a1;
+    color: #131bb7;
     font-size: larger;
 }
 
@@ -66,36 +64,40 @@ p {
 
 .container .btn {
     display: flex;
+    margin-top: 20px;
 }
-
-button {
-    font-family: 'Eczar', serif;
+.css-button-sliding-to-left--sky {
+    min-width: 100px;
+    height: 35px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
-    margin: 35px auto;
-    width: 15vh;
-    font-size: medium;
-    background-color: rgb(32, 117, 186);
-    border-color: #000000;
-    color: #ffffff;
-}
-
-button:hover {
-    background-color: #000000;
-    transition: all 1s;
-    color: #ffffff;
-}
-
-footer {
-    font-family: 'Eczar', serif;
-    text-align: center;
-    color: #ffffff;
-}
-
-footer a:hover {
-    color: #b713a1;
-    text-decoration: none;
-}
-footer a {
-    color: #ff0000;
-    text-decoration: none;
-}
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #000000;
+    color: #4433ff;
+  }
+  .css-button-sliding-to-left--sky:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--sky:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--sky:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #4433ff;
+  }
